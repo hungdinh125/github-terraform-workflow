@@ -22,7 +22,7 @@ jobs:
     - name: terraform plan cli
       run: terraform plan
     - name: terraform destroy cli
-      run: terraform apply -destroy
+      run: terraform destroy
     - name: get the tfstate file
       uses: stefanzweifel/git-auto-commit-action@v5     
       with:
