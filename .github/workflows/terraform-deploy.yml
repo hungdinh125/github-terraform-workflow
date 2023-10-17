@@ -14,3 +14,7 @@ jobs:
       with:
         role-to-assume: arn:aws:iam::034851978623:role/github-terraform-integration
         aws-region: us-east-1
+    - name: terraform init cli
+      run: terraform init
+    - name: terraform plan cli
+      run: terraform plan
