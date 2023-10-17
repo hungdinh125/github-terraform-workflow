@@ -20,3 +20,5 @@ jobs:
       run: terraform init
     - name: terraform plan cli
       run: terraform plan
+    - name: terraform deploy cli
+      run: terraform apply -auto-approve      
