@@ -5,7 +5,7 @@ on:
 permissions:
   id-token: write
   contents: write
-  
+
 jobs:
   terraform-deploy:
     runs-on: ubuntu-latest
@@ -27,4 +27,4 @@ jobs:
       uses: stefanzweifel/git-auto-commit-action@v5     
       with:
         commit_message: udpate terrform state file
-        file_pattern: terrform.tfstate
+        file_pattern: terraform.tfstate
